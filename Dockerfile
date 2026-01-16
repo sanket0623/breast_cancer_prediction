@@ -11,7 +11,8 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port the app runs on
-EXPOSE 9696
+ENV PORT=8080
+EXPOSE 8080
 
 # Run the Flask app
 CMD ["python", "predict.py"]

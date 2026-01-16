@@ -7,7 +7,7 @@ candidate = [842302, 17.99, 10.38, 122.8, 1001, 0.1184, 0.2776, 0.3001, 0.1471, 
               0.4601, 0.1189]
 
 # Define the URL for the Flask API
-url = "http://localhost:9696/predict"
+url = "http://localhost:8080/predict"
 
 # Make the API call with the candidate data
 response = requests.post(url=url, json=candidate)
