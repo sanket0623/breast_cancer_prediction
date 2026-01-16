@@ -15,4 +15,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Run the Flask app
-CMD ["python", "predict.py"]
+CMD ["gunicorn", "-b", ":8080", "predict:app"]
